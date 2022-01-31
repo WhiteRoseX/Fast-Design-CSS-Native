@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    background: #F5FFFA;
+    color: #F5FFFA;
+    /* background-image: url(./img/background.png); */
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+}
+
+a{
+    text-decoration: none;
+    color: #F5FFFA;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: auto 100px 100px 100px ;
+    color: #f2f2f2;
+    padding: 10px;
+    list-style-type: none;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 30px;
+}
+
+h1, li, ul, .navbar {
+    font-weight: 900;
+}
+
+li {
+    user-select: none;
+    text-align: center;
+    padding:  10px;
+    list-style-type: none;
+}
+
+.lii:hover{
+    border-bottom: 1px solid#f2f2f2;
+}   
+
+.f1{
+    height: 400px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    margin: 100px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* overflow: scroll; */
+    box-shadow: 2px 2px 2px #00000026;
+}
+
+.hash1{
+    margin-bottom: 20px;
+}
+
+.f1-1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.f1-2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.img-container{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: auto auto;
+    place-items: center;
+    margin: 100px;
+    position: relative;
+}
+
+.text-1{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+    text-align: center; 
+    grid-column: 1/2;
+    color: black;
+    
+}
+
+.hash2{
+    text-align: start;
+}
+
+img{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-column: 2/2;
+}
+
+.card {
+    height: 450px;
+    /* border: black 2px solid; */
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 70px;
+}
+
+.content{
+    text-align: center;
+    height: 350px;
+    color: #F5FFFA;
+    width: 300px;
+    padding: 15px;
+    /* border: black 2px solid; */
+    box-shadow: 2px 2px 2px #00000026;
+    margin: auto;
+    border-radius: 15px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    transition: 5s;
+    animation: anni1 7s infinite linear;
+}
+
+h3{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.footer{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    height: 300px;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.col{
+    margin: auto;
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .f1{
+        font-size: 10px;
+        padding: auto;
+    }
+
+    .f1-1, .f1-2{
+        text-align: center;
+        padding: 5px;
+    }
+
+    .hash1{
+        margin: auto;
+        padding: 5px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .img-container{
+        display: grid;
+        grid-template-columns: 300px;
+        /* grid-template-rows: 1fr 1fr; */
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        justify-items: stretch;
+    }
+
+    .text-1{
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+    }
+
+    img{
+        grid-column: 1/2;
+        max-width: 300px;
+        place-items: center;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+        margin: 100px 0;
+    }
+
+    .content{
+        animation: anni1v2 infinite 9s;
+    }
+
+}
+
+
+@keyframes anni1 {
+    0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(-300%, 0);
+      }    
+      50% {
+        transform: translate(125%, 0);
+      }    
+      75% {
+        transform: translate(300%, 0);
+      }    
+}
+
+@keyframes anni1v2 {
+    0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(-20%, 0);
+      }    
+      50% {
+        transform: translate(20%, 0);
+      }    
+}
+
+/* transform: skewY(-3deg); */
