@@ -205,6 +205,12 @@ h3{
 
 }
 
+@media screen and (max-width: 600px) {
+    body{
+        width: 110vh;
+    }
+}
+
 
 @keyframes anni1 {
     0% {
